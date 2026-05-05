@@ -139,10 +139,10 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-       <h2 class="title is-3 has-text-centered">Overview of the SAGE dataset</h2>
-      <img src="static/images/sunburst.png" alt="SAGE dataset distribution sunburst">
+       <h2 class="title is-3 has-text-centered">System overview</h2>
+      <img src="static/images/teaser.png" alt="SAGE system overview: curation pipeline and agentic evaluation">
       <h2 class="subtitle has-text-centered">
-     Distribution of ~839K images across 335 crops and 1,251 disease classes. Each disease is paired with structured, source-cited symptom knowledge: organ tags, symptom descriptions, source URLs, and verbatim supporting quotes &mdash; not just an image and a label.
+     <b>Curation</b> (top): a source-cited disease KB (335 crops, 1,251 diseases) and an image corpus (~839K images) are assembled in parallel; expert audit and dedupe gate both tracks before image filtering tags every image with its anatomical context. <b>Agentic evaluation</b> (bottom): a VLM agent observes the affected organ, narrows candidates via the anatomical index, consults KB symptoms, and sequentially compares reference images in an open-ended loop bounded by reference budget&nbsp;<i>k</i> &mdash; producing a prediction <i>with</i> a step-by-step reasoning trace.
       </h2>
     </div>
   </div>
@@ -271,32 +271,6 @@
   </div>
 </section>
 <!-- End Confusion matrices -->
-
-
-<!-- Reasoning traces -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container is-max-desktop">
-      <h2 class="title is-3 has-text-centered">Transparent reasoning traces</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <p class="description">
-            Every prediction comes with a step-by-step diagnostic trace: which reference images the agent chose to view, the text it produced between views, and its final prediction with confidence and explanation. Below is one step from a real trace (Mango, Anthracnose, Sonnet+KB, <i>k</i>=4):
-          </p>
-          <div class="content has-text-left" style="background: #fff; padding: 1.5rem; border-radius: 6px; border: 1px solid #ddd;">
-            <p><span style="color:#888;">&larr; <b>Step 6</b>:</span> viewed an Anthracnose reference image.</p>
-            <p><b>Step 7:</b> <i>&ldquo;Near-perfect match &mdash; green leaf with discrete dark brown/black irregular spots. The sooty mould reference showed a diffuse coating, not discrete spots.&rdquo;</i></p>
-            <p><span style="color:#888;">&rarr; <b>Step 8</b>:</span> cross-checked KB symptoms &nbsp;&rArr;&nbsp; <b>Anthracnose</b> &check; Correct</p>
-          </div>
-          <p class="description" style="margin-top: 1rem;">
-            Traces are the primary vehicle for explainability: a user can see not just what the system predicted but how it arrived at that prediction, which references it found most informative, and what alternative diagnoses it considered and ruled out. Sixteen full traces appear in the paper appendix.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End Reasoning traces -->
 
 
 <!--BibTeX -->
