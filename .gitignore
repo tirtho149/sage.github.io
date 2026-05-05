@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Editors / IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Local Python / build junk (in case any source tooling is added)
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+
+# Drop any zipped paper archives that get re-downloaded into the repo root
+/SAGE__*.zip
+/SAGE__*.pdf
