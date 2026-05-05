@@ -5,20 +5,20 @@ Project page for **SAGE: Scalable Agentic Grounded Evaluation for Crop Disease D
 The largest plant-disease image dataset to date (~839K images, 335 crops, 1,251 disease classes), paired with an automated source-cited symptom-knowledge pipeline and a training-free agentic diagnostic system that produces transparent, step-by-step reasoning traces.
 
 - **Paper:** [`static/paper/paper.pdf`](static/paper/paper.pdf)
-- **Slides:** [`static/paper/slides.pdf`](static/paper/slides.pdf)
-- **Code & Dataset:** https://github.com/tirtho149/SAGE
+- **Code:** https://github.com/tirtho149/SAGE
+- **Dataset:** https://huggingface.co/datasets/tirtho149/SAGE
 
 ## Authors
-Muhammad Arbab Arshad\*, Tirtho Roy\*, Yanben Shen, Dinakaran Elango, Shivani Chiranjeevi, Asheesh K. Singh, Baskar Ganapathysubramanian, Chinmay Hegde, Arti Singh, Soumik Sarkar†
+**Muhammad Arbab Arshad\***, **Tirtho Roy\***, Yanben Shen, Dinakaran Elango, Shivani Chiranjeevi, Asheesh K. Singh, Baskar Ganapathysubramanian, Chinmay Hegde, Arti Singh, **Soumik Sarkar†**
 
-\*Equal contribution. †Corresponding author: soumiks@iastate.edu
+\*Equal contribution (first authors). †Corresponding author: soumiks@iastate.edu
 
 Iowa State University · New York University
 
-**Status:** NeurIPS 2025 preprint, under review
+**Status:** Under Review
 
 ## Editing the page
-Content lives in `index.html`; assets live in `static/`. Author headshots go in `static/images/team/` (`Dinakaran.png` and `Shivani.png` are still missing).
+Content lives in `index.html`; assets live in `static/`.
 
 ## Acknowledgments
 Built on the [Academic Project Page Template](https://github.com/eliahuhorwitz/Academic-project-page-template), adopted from the [Nerfies](https://nerfies.github.io/) page.
